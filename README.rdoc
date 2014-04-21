@@ -98,6 +98,13 @@ Which will output a config file that you can copy and paste into <tt>openvpn.con
 
 Each client will need: <tt>user.key</tt>, <tt>user.crt</tt>, <tt>ca.crt</tt> and <tt>ta.key</tt>. Make sure to enable tls-auth = 1.
 
-== Testing
+== Contributing
+
+  git clone git@github.com:penguinpowernz/vpnmaker.git # clone it
+  bundle install                                       # install dependencies
+  bundle exec rake c                                   # start a pry console with VPNMaker loaded
+  rake test                                            # run the tests
+  rake build                                           # build the gem (dumps into pkg)
+  rake install                                         # build and install the gem
 
 Tests are done with Rspec.  To run the tests simply run `bundle exec rake test` or `bundle exec rake spec`.
